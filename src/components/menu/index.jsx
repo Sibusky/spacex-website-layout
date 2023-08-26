@@ -4,7 +4,14 @@ import { NavbarVertical } from '../navbar-vertical';
 
 export function Menu({ isOpen, handleClose }) {
   return (
-    <div className={`menu ${isOpen ? 'menu_opened' : ''}`}>
+    <div
+      className={`menu ${isOpen ? 'menu_opened' : ''}`}
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          handleClose();
+        }
+      }}
+    >
       <div className={`menu__container ${isOpen ? 'menu__container_opened' : ''}`}>
         <button className='menu__button-close' onClick={handleClose}>
           <svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -26,7 +33,7 @@ export function Menu({ isOpen, handleClose }) {
             />
           </svg>
         </button>
-        <NavbarVertical handleClose={handleClose}/>
+        <NavbarVertical handleClose={handleClose} />
       </div>
     </div>
   );

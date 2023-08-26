@@ -3,10 +3,10 @@ import './styles.css';
 import { useLocation } from 'react-router';
 
 export default function Content({ photos, setPhotos }) {
-    let { pathname } = useLocation();
-    useEffect(() => {
-        setPhotos([])
-    }, [pathname, setPhotos])
+  let { pathname } = useLocation();
+  useEffect(() => {
+    setPhotos([]);
+  }, [pathname, setPhotos]);
   return (
     <section className='content section'>
       {photos.length ? (

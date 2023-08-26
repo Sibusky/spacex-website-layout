@@ -7,7 +7,7 @@ import './styles.css';
 export function Layout({ handleOpen }) {
   return (
     <div className='layout'>
-      <Header handleOpen={handleOpen}/>
+      <Header handleOpen={handleOpen} />
       <Outlet />
       <Footer />
     </div>

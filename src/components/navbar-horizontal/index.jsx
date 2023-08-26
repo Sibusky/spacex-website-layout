@@ -18,7 +18,7 @@ export function NavbarHorizontal() {
             Главная
           </NavLink>
         </li>
-         <li className='navbar-horizontal__item'>
+        <li className='navbar-horizontal__item'>
           <NavLink
             to='/technology'
             className={({ isActive }) =>
@@ -30,7 +30,7 @@ export function NavbarHorizontal() {
             Технология
           </NavLink>
         </li>
-         <li className='navbar-horizontal__item'>
+        <li className='navbar-horizontal__item'>
           <NavLink
             to='/schedule'
             className={({ isActive }) =>
@@ -42,7 +42,7 @@ export function NavbarHorizontal() {
             График полётов
           </NavLink>
         </li>
-         <li className='navbar-horizontal__item'>
+        <li className='navbar-horizontal__item'>
           <NavLink
             to='/guarantee'
             className={({ isActive }) =>
@@ -54,7 +54,7 @@ export function NavbarHorizontal() {
             Гарантия
           </NavLink>
         </li>
-         <li className='navbar-horizontal__item'>
+        <li className='navbar-horizontal__item'>
           <NavLink
             to='/about'
             className={({ isActive }) =>
@@ -66,7 +66,7 @@ export function NavbarHorizontal() {
             О компании
           </NavLink>
         </li>
-         <li className='navbar-horizontal__item'>
+        <li className='navbar-horizontal__item'>
           <NavLink
             to='/contacts'
             className={({ isActive }) =>

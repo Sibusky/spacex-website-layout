@@ -6,7 +6,7 @@ import Content from '../components/content';
 export function Main({ fetchContent, photos, setPhotos }) {
   return (
     <Container>
-      <Hero textBig='Путешествие' textSmall='на красную планету' fetchContent={fetchContent}  />
+      <Hero textBig='Путешествие' textSmall='на красную планету' fetchContent={fetchContent} />
       <Content photos={photos} setPhotos={setPhotos} />
     </Container>
   );
