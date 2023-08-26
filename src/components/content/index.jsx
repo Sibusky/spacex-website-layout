@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles.css';
+import { useLocation } from 'react-router';
 
-export default function Content({ photos }) {
+export default function Content({ photos, setPhotos }) {
+    let { pathname } = useLocation();
+    useEffect(() => {
+        setPhotos([])
+    }, [pathname, setPhotos])
   return (
     <section className='content section'>
       {photos.length ? (
@@ -18,7 +23,11 @@ export default function Content({ photos }) {
           ))}
         </ul>
       ) : (
-        <p className='text'>Нажмите кнопку "Начать путешествие" 🚀<br />На каждой странице свой контент</p>
+        <p className='text'>
+          Нажмите кнопку "Начать путешествие" 🚀
+          <br />
+          На каждой странице свой контент
+        </p>
       )}
     </section>
   );

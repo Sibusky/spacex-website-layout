@@ -36,12 +36,12 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route element={<Layout handleOpen={handleMenuOpen} />}>
-            <Route index element={<Main fetchContent={fetchContent} photos={photos} />} />
-            <Route path='technology' element={<Technology fetchContent={fetchContent} photos={photos} />} />
-            <Route path='schedule' element={<Schedule fetchContent={fetchContent} photos={photos} />} />
-            <Route path='guarantee' element={<Guarantee fetchContent={fetchContent} photos={photos} />} />
-            <Route path='about' element={<About fetchContent={fetchContent} photos={photos} />} />
-            <Route path='contacts' element={<Contacts fetchContent={fetchContent} photos={photos} />} />
+            <Route index element={<Main fetchContent={fetchContent} photos={photos} setPhotos={setPhotos} />} />
+            <Route path='technology' element={<Technology fetchContent={fetchContent} photos={photos} setPhotos={setPhotos} />} />
+            <Route path='schedule' element={<Schedule fetchContent={fetchContent} photos={photos} setPhotos={setPhotos} />} />
+            <Route path='guarantee' element={<Guarantee fetchContent={fetchContent} photos={photos} setPhotos={setPhotos} />} />
+            <Route path='about' element={<About fetchContent={fetchContent} photos={photos} setPhotos={setPhotos} />} />
+            <Route path='contacts' element={<Contacts fetchContent={fetchContent} photos={photos} setPhotos={setPhotos} />} />
           </Route>
         </Route>
         <Route path='*' element={<PageNotFound />} />
