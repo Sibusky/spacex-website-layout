@@ -7,19 +7,19 @@
 
 ### Features
 
-– React SPA
-– Routing included
-– Responsive layout
-– Images uploading within fetch request using [Unsplash](https://unsplash.com/) API
+- React SPA
+- Routing included
+- Responsive layout
+- Images uploading within fetch request using [Unsplash](https://unsplash.com/) API
 
 ### Stack and technology
 
-– HTML, CSS, JS
-– React
-– REST API ([Unsplash](https://unsplash.com/))
-– Figma layouting
+- HTML, CSS, JS
+- React
+- REST API ([Unsplash](https://unsplash.com/))
+- Figma layouting
 
-# Вёрстка сайта для компании SpaceX (не хотите – не верьте 🙂)
+# Вёрстка сайта для компании SpaceX (не хотите - не верьте 🙂)
 
 ### Запуск
 
@@ -28,14 +28,14 @@
 
 ### Особенности
 
-– Одностраничное приложение на React
-– Поддерживает роутинг
-– Отзывчивая вёрстка
-– Загрузка изображении с открытого REST API ([Unsplash](https://unsplash.com/) API)
+- Одностраничное приложение на React
+- Поддерживает роутинг
+- Отзывчивая вёрстка
+- Загрузка изображении с открытого REST API ([Unsplash](https://unsplash.com/) API)
 
 ### Стэк и технологии
 
-– HTML, CSS, JS
-– React
-– REST API ([Unsplash](https://unsplash.com/))
-– Вёрстка в Figma
+- HTML, CSS, JS
+- React
+- REST API ([Unsplash](https://unsplash.com/))
+- Вёрстка в Figma
