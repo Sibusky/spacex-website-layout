@@ -189,12 +189,23 @@
   position: relative;
 }
 
+.hero__start::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: -53px;
+  width: 202px;
+  height: 97px;
+  background-size: 206px 144px;
+  background-image: url('../../images/border-cutted.svg');
+}
+
 .hero__start-button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 192px;
-  height: 48px;
+  height: 38px;
   padding: 0;
   border: 1px solid;
   border-image-source: linear-gradient(11deg, #11558b, rgba(0, 0, 0, 0), #11558b);
@@ -204,12 +215,15 @@
 .hero__start-button-container {
   position: absolute;
   background-color: transparent;
-  width: 101%;
+
+  border: none;
+
+  /* width: 101%;
   height: 101%;
   border: 10px solid;
   border-image-source: url('../../images/border-cutted.png');
   border-image-slice: 20;
-  z-index: 1;
+  z-index: 1; */
 }
 
 .hero__line {
