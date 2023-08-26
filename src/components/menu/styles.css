@@ -49,15 +49,14 @@
   padding: 0;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1025px) {
   .menu__button-close {
-    top: 30px;
+    top: 15px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .menu__button-close {
-    top: 24px;
-    right: 28px;
+    right: 40px;
   }
 }

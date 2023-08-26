@@ -6,6 +6,12 @@ header {
   z-index: 1;
 }
 
+@media screen and (max-width: 1025px) {
+  header {
+    height: 60px;
+  }
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -23,6 +29,20 @@ header {
   padding: 0;
 }
 
+@media screen and (max-width: 1025px) {
+  .header__logo {
+    width: 300px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__logo {
+    width: 275px;
+    height: 60px;
+  }
+}
+
 .header__logo-container {
   width: 102%;
   height: 103%;
@@ -30,6 +50,20 @@ header {
   border: 10px solid transparent;
   border-image: url('../../images/border.png') round;
   border-image-slice: 20;
+}
+
+@media screen and (max-width: 1025px) {
+  .header__logo-container {
+    padding: 0px 0 0 9px;
+    border-image-outset: 2px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__logo-container {
+    padding: 0;
+    border-image-outset: 0;
+  }
 }
 
 .header__menu-button {

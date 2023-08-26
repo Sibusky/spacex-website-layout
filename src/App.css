@@ -28,6 +28,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .section__container {
+    width: 95%;
+  }
+}
+
 .text {
   font-family: 'Roboto', Arial, sans-serif;
   font-style: normal;
@@ -40,6 +46,12 @@
   letter-spacing: 0;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 660px) {
+  .text {
+    font-size: 14px;
+  }
 }
 
 button,
