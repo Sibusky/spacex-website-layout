@@ -9,10 +9,19 @@ import { Guarantee } from './pages/guarantee';
 import { About } from './pages/about';
 import { Contacts } from './pages/contacts';
 import { Menu } from './components/menu';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
+import { getPhotos } from './js/api';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [photos, setPhotos] = useState([]);
+
+  const fetchContent = useCallback(
+    (query) => {
+      getPhotos(query).then((res) => setPhotos(res.results));
+    },
+    [setPhotos]
+  );
 
   function handleMenuOpen() {
     setIsMenuOpen(true);
@@ -26,18 +35,18 @@ function App() {
     <div className='App'>
       <Routes>
         <Route path='/'>
-          <Route element={<Layout handleOpen={handleMenuOpen}/>}>
-            <Route index element={<Main />} />
-            <Route path='technology' element={<Technology />} />
-            <Route path='schedule' element={<Schedule />} />
-            <Route path='guarantee' element={<Guarantee />} />
-            <Route path='about' element={<About />} />
-            <Route path='contacts' element={<Contacts />} />
+          <Route element={<Layout handleOpen={handleMenuOpen} />}>
+            <Route index element={<Main fetchContent={fetchContent} photos={photos} />} />
+            <Route path='technology' element={<Technology fetchContent={fetchContent} photos={photos} />} />
+            <Route path='schedule' element={<Schedule fetchContent={fetchContent} photos={photos} />} />
+            <Route path='guarantee' element={<Guarantee fetchContent={fetchContent} photos={photos} />} />
+            <Route path='about' element={<About fetchContent={fetchContent} photos={photos} />} />
+            <Route path='contacts' element={<Contacts fetchContent={fetchContent} photos={photos} />} />
           </Route>
         </Route>
         <Route path='*' element={<PageNotFound />} />
       </Routes>
-      <Menu isOpen={isMenuOpen} handleClose={handleMenuClose}/>
+      <Menu isOpen={isMenuOpen} handleClose={handleMenuClose} />
     </div>
   );
 }

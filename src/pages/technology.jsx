@@ -1,9 +1,13 @@
 import React from 'react';
+import { Container } from '../components/container';
+import Content from '../components/content';
+import { Hero } from '../components/hero';
 
-export function Technology() {
+export function Technology({ fetchContent, photos }) {
   return (
-    <div>
-      <p className='text'>tech</p>
-    </div>
+    <Container>
+      <Hero textBig='Технология' textSmall='путешествия' fetchContent={fetchContent} />
+      <Content photos={photos} />
+    </Container>
   );
 }

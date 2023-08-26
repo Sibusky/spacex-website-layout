@@ -13,7 +13,7 @@ export function Logo() {
       width='270px'
       height='36px'
       viewBox='0 0 331.644 40.825'
-      enable-background='new 0 0 331.644 40.825'
+      enableBackground='new 0 0 331.644 40.825'
     >
       <g>
         <path

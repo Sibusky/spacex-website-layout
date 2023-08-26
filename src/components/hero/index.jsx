@@ -1,21 +1,29 @@
 import React from 'react';
 import './styles.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-export function Hero() {
+export function Hero({ textBig, textSmall, fetchContent }) {
+  let { pathname } = useLocation();
+  const query = pathname.slice(1) ? pathname.slice(1) : 'space';
+
   return (
     <section className='hero section'>
       <div className='hero__container section__container'>
         <div className='hero__space-object-image'></div>
         <div className='hero__description'>
           <h1 className='hero__title text'>
-            <span className='hero__span'>Путешествие</span>
+            <span className='hero__span'>{textBig}</span>
             <br />
-            на красную планету
+            {textSmall}
           </h1>
           <div className='hero__start'>
             <div className='hero__start-button'>
-              <button className='hero__start-button-container button text'>Начать путешествие</button>
+              <button
+                className='hero__start-button-container button text'
+                onClick={() => fetchContent(query)}
+              >
+                Начать путешествие
+              </button>
             </div>
           </div>
           <div className='hero__line' />

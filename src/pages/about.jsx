@@ -1,9 +1,13 @@
 import React from 'react';
+import { Container } from '../components/container';
+import { Hero } from '../components/hero';
+import Content from '../components/content';
 
-export function About() {
+export function About({ fetchContent, photos }) {
   return (
-    <div>
-      <p className='text'>about</p>
-    </div>
+    <Container>
+      <Hero textBig='Компания' textSmall='наша любимая' fetchContent={fetchContent} />
+      <Content photos={photos} />
+    </Container>
   );
 }
