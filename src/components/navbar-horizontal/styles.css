@@ -1,0 +1,27 @@
+.navbar-horizontal {
+
+}
+
+.navbar-horizontal__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-horizontal__item {
+    margin: 0 40px 0 0;
+}
+
+.navbar-horizontal__item:last-of-type {
+    margin: 0;
+}
+
+.navbar-horizontal__link {
+
+}
+
+.navbar-horizontal__link_active {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #3c3c3c;
+}

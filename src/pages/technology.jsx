@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export function Technology() {
   return (
-    <div>technology</div>
-  )
+    <div>
+      <p className='text'>tech</p>
+    </div>
+  );
 }

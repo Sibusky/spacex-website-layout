@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export function About() {
   return (
-    <div>about</div>
-  )
+    <div>
+      <p className='text'>about</p>
+    </div>
+  );
 }

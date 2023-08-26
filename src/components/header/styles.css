@@ -1,0 +1,37 @@
+header {
+  height: 100px;
+  border-bottom: 1px solid #3c3c3c;
+  border-top: 1px solid #3c3c3c;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 316px;
+  height: 101px;
+  border: 1px solid #3c3c3c;
+  background-color: transparent;
+  padding: 0;
+}
+
+.header__logo-container {
+  width: 102%;
+  height: 103%;
+  padding: 20px 0 0 30px;
+  border: 10px solid transparent;
+  border-image: url('../../images/border.png') round;
+  border-image-slice: 20;
+}
+
+.header__menu-button {
+  display: none;
+  background-color: transparent;
+  border: none;
+}

@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export function Contacts() {
   return (
-    <div>contacts</div>
-  )
+    <div>
+      <p className='text'>contacts</p>
+    </div>
+  );
 }

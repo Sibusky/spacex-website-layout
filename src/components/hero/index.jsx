@@ -4,7 +4,7 @@ import './styles.css'
 export function Hero() {
   return (
     <section className='hero'>
-        hero
+       <p className='text'>hero</p>
     </section>
   )
 }

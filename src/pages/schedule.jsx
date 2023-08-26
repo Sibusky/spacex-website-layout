@@ -2,6 +2,8 @@ import React from 'react'
 
 export function Schedule() {
   return (
-    <div>schedule</div>
+    <div>
+       <p className='text'>schedule</p>
+    </div>
   )
 }
