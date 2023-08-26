@@ -22,6 +22,12 @@
   width: 1200px;
 }
 
+@media screen and (max-width: 1400px) {
+  .section__container {
+    width: 90%;
+  }
+}
+
 .text {
   font-family: 'Roboto', Arial, sans-serif;
   font-style: normal;

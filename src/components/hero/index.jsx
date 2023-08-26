@@ -9,14 +9,16 @@ export function Hero() {
         <div className='hero__space-object-image'></div>
         <div className='hero__description'>
           <h1 className='hero__title text'>
-            <span className='hero__span'>Путешествие</span> на красную планету
+            <span className='hero__span'>Путешествие</span>
+            <br />
+            на красную планету
           </h1>
           <div className='hero__start'>
             <div className='hero__start-button'>
               <button className='hero__start-button-container button text'>Начать путешествие</button>
             </div>
-            <div className='hero__start-line' />
           </div>
+          <div className='hero__line' />
         </div>
         <div className='hero__summary'>
           <ul className='hero__summary-list'>

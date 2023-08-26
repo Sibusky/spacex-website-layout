@@ -8,13 +8,25 @@ import { Schedule } from './pages/schedule';
 import { Guarantee } from './pages/guarantee';
 import { About } from './pages/about';
 import { Contacts } from './pages/contacts';
+import { Menu } from './components/menu';
+import { useState } from 'react';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  function handleMenuOpen() {
+    setIsMenuOpen(true);
+  }
+
+  function handleMenuClose() {
+    setIsMenuOpen(false);
+  }
+
   return (
     <div className='App'>
       <Routes>
         <Route path='/'>
-          <Route element={<Layout />}>
+          <Route element={<Layout handleOpen={handleMenuOpen}/>}>
             <Route index element={<Main />} />
             <Route path='technology' element={<Technology />} />
             <Route path='schedule' element={<Schedule />} />
@@ -25,6 +37,7 @@ function App() {
         </Route>
         <Route path='*' element={<PageNotFound />} />
       </Routes>
+      <Menu isOpen={isMenuOpen} handleClose={handleMenuClose}/>
     </div>
   );
 }

@@ -4,10 +4,10 @@ import { Outlet } from 'react-router';
 import { Footer } from '../footer';
 import './styles.css';
 
-export function Layout() {
+export function Layout({ handleOpen }) {
   return (
     <div className='layout'>
-      <Header />
+      <Header handleOpen={handleOpen}/>
       <Outlet />
       <Footer />
     </div>
