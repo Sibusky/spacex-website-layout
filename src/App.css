@@ -3,7 +3,7 @@
 }
 
 .App {
-  background-color: black;
+  background-color: transparent;
   min-width: 320px;
   max-width: 1920px;
   margin: 0 auto;
@@ -20,7 +20,6 @@
 
 .section__container {
   width: 1200px;
-  /* margin: 0 auto; */
 }
 
 .text {
