@@ -1,0 +1,29 @@
+.navbar-vertical {
+  display: block;
+}
+
+.navbar-vertical__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-vertical__item {
+  margin-bottom: 30px;
+}
+
+.navbar-vertical__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.navbar-vertical__link {
+  color: #3c3c3c;
+}
+
+.navbar-vertical__link_active {
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #3c3c3c;
+}
