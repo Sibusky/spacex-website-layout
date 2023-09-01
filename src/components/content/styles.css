@@ -70,3 +70,11 @@
 .content > .text {
   text-align: center;
 }
+
+.content > .text {
+  max-width: 90%;
+}
+
+.text > .link {
+  color: #11558b;
+}
