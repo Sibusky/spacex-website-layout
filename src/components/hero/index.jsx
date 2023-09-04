@@ -18,6 +18,22 @@ export function Hero({ textBig, textSmall, fetchContent }) {
           </h1>
           <div className='hero__start'>
             <div className='hero__start-button'>
+              <svg
+                className='hero__start-svg'
+                width='192'
+                height='38'
+                viewBox='0 0 192 38'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <defs>
+                  <filter id='shadow' class='shadow'>
+                    <feDropShadow dx='0' dy='0' stdDeviation='2' floodColor='white' />
+                  </filter>
+                </defs>
+                <path d='M1 31.7059V37H6.27778' stroke='white' filter='url(#shadow)' />
+                <path d='M191 6.2941L191 0.99998L185.722 0.99998' stroke='white' filter='url(#shadow)' />
+              </svg>
               <button
                 className='hero__start-button-container button text'
                 onClick={() => fetchContent(query)}
