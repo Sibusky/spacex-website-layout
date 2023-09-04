@@ -190,15 +190,10 @@
   position: relative;
 }
 
-.hero__start::before {
-  content: '';
+.hero__start-svg {
   position: absolute;
-  left: -7px;
-  top: -53px;
-  width: 202px;
-  height: 97px;
-  background-size: 206px 144px;
-  background-image: url('../../images/border-cutted.svg');
+  top: 0;
+  left: 0;
 }
 
 .hero__start-button {
